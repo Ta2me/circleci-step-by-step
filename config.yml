@@ -1,0 +1,8 @@
+version: 2
+jobs: 
+  buikd: 
+    docker:
+      - image: circleci/openjdk:8:jdk-browsers
+    steps:
+      - checkout
+      - run: echo "Hello CIecleCI!"
